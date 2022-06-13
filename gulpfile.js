@@ -17,7 +17,8 @@ src('src/scss/app.scss')
 }
 
 function dev() {
-        watch('src/scss/app.scss', css);
+        watch( 'src/scss/**/*.scss', css);
+    
 }
 
 
