@@ -17,8 +17,17 @@
   },
   "homepage": "https://github.com/Uzerano/cafeteria-SASS#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.52.3"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ],
+  "dependencies": {
+    "postcss": "^8.4.14"
   }
 }
