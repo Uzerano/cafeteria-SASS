@@ -1,2 +1,62 @@
 
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
 
+
+.barra {
+    display: flex;
+    flex-direction: column;
+  
+    
+    .logo img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    @include m.tablet { 
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: v.$separacion 0 0 0;
+
+    .link:nth-child(1) {
+        color: #C37936;
+    }
+    
+    .link {
+        display: block;
+        text-transform: uppercase;
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        &:hover{
+            color: #C37936;
+        }
+    }
+
+    @include m.tablet { 
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+
+.texto-header h1{
+    margin: v.$separacion 0 0 0;
+    text-transform: uppercase;
+    color: v.$blanco;
+    text-align: center;
+    line-height: 1.8;
+    @include m.tablet { 
+        margin: 15rem 0 0 0;
+    }
+}
