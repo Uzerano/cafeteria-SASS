@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
     margin: v.$separacion 0 0 0;
 
     .link:nth-child(1) {
@@ -37,8 +36,13 @@
         color: v.$blanco;
         font-size: 2rem;
         font-weight: 700;
+        margin: 1rem 0;
         &:hover{
             color: #C37936;
+        }
+
+        @include m.tablet { 
+            margin: 0 0 0 2rem;
         }
     }
 
