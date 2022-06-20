@@ -1,35 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cafeteria SASS</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css" />
-  </head>
-  <body>
-    <header class="header header-inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <div class="logo">
-                    <img src="build/img/logo.svg" alt="Logo Cafeteria">
-                </div>
-                <nav class="nav-principal">
-                        <a href="index.html" class="link">Inicio</a>
-                        <a href="nosotros.html" class="link">Nosotros</a>
-                        <a href="proceso.html" class="link">Proceso</a>
-                        <a href="menu.html" class="link">Menú</a>
-                        <a href="galeria.html" class="link">Galería</a>
-                        <a href="contacto.html" class="link">Contacto</a>
-                </nav>
-            </div>
-                <div class="texto-header text-center">
-                    <h1>Disfruta una deliciosa taza de café</h1>
-                </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafeteria SASS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="build/css/app.css" />
+</head>
+
+<body>
+  <header class="header header-inicio">
+    <div class="contenedor contenido-header">
+      <div class="barra">
+        <div class="logo">
+          <img src="build/img/logo.svg" alt="Logo Cafeteria" />
         </div>
-    </header>
-  </body>
+        <nav class="nav-principal">
+          <a href="index.html" class="link activo">Inicio</a>
+          <a href="nosotros.html" class="link">Nosotros</a>
+          <a href="proceso.html" class="link">Proceso</a>
+          <a href="menu.html" class="link">Menú</a>
+          <a href="galeria.html" class="link">Galería</a>
+          <a href="contacto.html" class="link">Contacto</a>
+        </nav>
+      </div>
+      <div class="texto-header text-center">
+        <h1>Disfruta una deliciosa taza de café</h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO-PRINCIPAL -->
+  <main class="sobre-nosotros contenedor text-center">
+    <div class="contenido-sobre-nosotros">
+      <div class="sobre-nosotros-texto">
+
+        <h2><span>conoce más</span>Sobre Nosotros</h2>
+
+        <p class="parrafo-nosotros">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
+          tenetur, perferendis ipsa tempora soluta sunt hic consectetur
+          blanditiis at unde, assumenda labore doloribus neque obcaecati vero
+          odit aut adipisci ex! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Blanditiis ipsa, rem optio consectetur nemo sunt
+          ut placeat. In aperiam distinctio atque eveniet culpa! Similique,
+          magnam? Cumque voluptatibus atque inventore dolor.
+        </p>
+      </div>
+
+      <div class="iconos-sobre-nosotros">
+        <div class="icono">
+          <img src="build/img/icono_cafe.svg" alt="Icono Café">
+          <p class="texto-iconos">Café</p>
+        </div>
+        <div class="icono">
+          <img src="build/img/icono_postre.svg" alt="Icono Postre">
+          <p class="texto-iconos">Postre</p>
+        </div>
+        <div class="icono">
+          <img src="build/img/icono_te.svg" alt="Icono té">
+          <p class="texto-iconos">Té</p>
+        </div>
+      </div>
+
+      <section class="contenido-experiencia">
+        <h2><span>vive la</span>Experiencia</h2>
+        <div class="contenido-experiencia-grid">
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_01.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_02.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_03.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_04.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_05.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_06.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_07.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_08.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_09.jpg" alt="Imagen Galería">
+            </div>
+          <div class="imagen">
+            <img src="build/img/galeria/galeria_10.jpg" alt="Imagen Galería">
+            </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
 </html>

@@ -1,33 +1,39 @@
-
-@use "base/variables"as v;
-@use "base/mixins"as m;
+@use "base/variables" as v;
+@use "base/mixins" as m;
 
 .header {
-    padding: 5rem 0;
-    position: relative;
+  padding: 5rem 0;
+  position: relative;
+  @include m.tablet {
+    min-height: 70rem;
+  }
+  &::before {
+    content: " ";
+    background-color: v.$negro;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+  }
+}
 
-    &::before {
-        content: " ";
-        background-color: v.$negro;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0.5;
-    }
-
-    .contenido-header {
-        position: relative;
-    }
+.contenido-header {
+  position: relative;
+}
+h1 {
+  margin: v.$separacion 0 0 0;
+  text-transform: uppercase;
+  color: v.$blanco;
+  line-height: 1.8;
+  @include m.tablet {
+    margin: calc(v.$separacion * 2) 0 0 0;
+  }
 }
 
 .header-inicio {
-    background-image: url(../img/header_inicio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
- @include m.tablet { 
-    min-height: 70rem;
- }
+  background-image: url(../img/header_inicio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

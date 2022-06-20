@@ -16,11 +16,11 @@ html {
 body {
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
+    background-color: v.$cafeClaro;
 }
 
 p {
     color: v.$negro;
-    font-size: 2rem;
 }
 
 .contenedor {
@@ -42,6 +42,7 @@ h1,
 h2,
 h3 {
     margin: 0 0 v.$separacion 0; 
+    font-family: v.$fuente_secundaria;
 }
 
 h1 {
