@@ -1,0 +1,18 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sobre-nosotros {
+  padding: 4rem calc(v.$separacion / 2);
+  background-color: v.$blanco;
+
+  @include m.tablet {
+    margin-top: -10rem;
+    padding: calc(v.$separacion * 2);
+    position: relative;
+  }
+}
+
+.parrafo-nosotros {
+  line-height: 2;
+}
+

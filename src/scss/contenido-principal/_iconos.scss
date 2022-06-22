@@ -1,0 +1,26 @@
+
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.iconos-sobre-nosotros {
+    margin: v.$separacion 0;
+    img {
+        width: 30%;
+        margin: 0 auto;
+      }
+    @include m.tablet { 
+        @include m.grid (3, 5rem);
+        img {
+            width: 50%;
+        }
+    }
+
+ 
+
+  
+    .texto-iconos {
+        font-size: 3rem;
+        font-family: v.$fuenteCursiva;
+        color: v.$primario;
+      }
+  }
