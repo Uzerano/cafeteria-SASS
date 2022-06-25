@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use 'variables'as v;
 
 
 html {
@@ -38,3 +38,10 @@ img {
     max-width: 100%;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+    }
+}

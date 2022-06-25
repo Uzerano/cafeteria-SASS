@@ -37,3 +37,24 @@ h2 {
 h3 {
     font-size: 3.2rem;
 }
+
+.h2-blanco {
+    @extend h2;
+    color: v.$blanco;
+    span {
+        color: v.$blanco;
+    }
+    &::after {
+        display: none;
+    }
+}
+
+.h3-blanco {
+    color: v.$blanco;
+}
+
+.h3-contacto {
+    font-size: 2.4rem;
+    color: v.$secundario;
+    margin: 0 0 1rem 0;
+}
