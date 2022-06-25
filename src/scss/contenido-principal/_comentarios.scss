@@ -4,7 +4,7 @@
 .contenido-comentarios {
     padding:calc(v.$separacion * 2);
     background-color: v.$blanco;
-    margin: -10rem auto;
+    margin: -10rem auto 0 auto;
    
     .comentario {
         max-width: 50rem;
@@ -19,7 +19,7 @@
             line-height: 2;
             span {
                 display: block;
-                font-family: 'Bosa Nova', serif;
+                font-family: 'Bona Nova', serif;
                 font-size: 2.5rem;
                 color: v.$secundario;
                 margin: 2rem 0 0 0;

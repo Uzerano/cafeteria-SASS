@@ -675,7 +675,7 @@ h1 {
 .contenido-comentarios {
   padding: 10rem;
   background-color: #fff;
-  margin: -10rem auto;
+  margin: -10rem auto 0 auto;
 }
 .contenido-comentarios .comentario {
   max-width: 50rem;
@@ -694,17 +694,33 @@ h1 {
 }
 .contenido-comentarios .comentario p span {
   display: block;
-  font-family: "Bosa Nova", serif;
+  font-family: "Bona Nova", serif;
   font-size: 2.5rem;
   color: #c39c63;
   margin: 2rem 0 0 0;
   text-align: right;
 }
 
+.footer {
+  background-color: #5e311e;
+}
+.footer .contacto-grid {
+  background-color: #fff;
+  padding: 5rem 0;
+  font-family: "Bona Nova", serif;
+}
 @media (min-width: 768px) {
-  .contacto-grid {
+  .footer .contacto-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
   }
+}
+.footer .contacto-grid p {
+  font-size: 2rem;
+}
+.footer .parrafo-footer {
+  padding: 2rem;
+  margin: 0;
+  color: #fff;
 }
