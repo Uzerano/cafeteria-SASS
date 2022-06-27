@@ -1,0 +1,49 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+    background-color: v.$primario;
+
+    .contacto-grid {
+        @include m.tablet { 
+            @include m.grid(3, 2rem);
+        }
+        background-color: v.$blanco;
+        padding: v.$separacion 0;
+        p {
+            font-size: 2rem;
+            font-family: v.$fuenteCursiva;
+        }
+    }
+
+    .reservas {
+        a {
+            display: block;
+            color: v.$negro;
+            font-family: v.$fuenteCursiva;
+            font-size: 2rem;
+        }
+    }
+
+}
+
+.caja-contacto {
+    margin-bottom: v.$separacion;
+
+    @include m.tablet { 
+        margin-bottom: 0;
+    }
+}
+.caja-contacto:nth-child(3) {
+    margin-bottom: 0;
+}
+
+
+
+.parrafo-footer {
+    padding: 2rem;
+    margin: 0;
+   color: v.$blanco;
+}
+

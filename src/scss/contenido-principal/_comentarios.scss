@@ -2,9 +2,12 @@
 @use 'base/mixins' as m;
 
 .contenido-comentarios {
-    padding:calc(v.$separacion * 2);
+    padding: v.$separacion 2rem;
     background-color: v.$blanco;
     margin: -10rem auto 0 auto;
+    @include m.tablet { 
+        padding:calc(v.$separacion * 2);
+    }
    
     .comentario {
         max-width: 50rem;
@@ -13,15 +16,16 @@
         padding: 2rem;
         border-radius: 1rem;
         @include m.tablet { 
+          
             padding: 2rem v.$separacion ;
         }
         p {
             line-height: 2;
             span {
                 display: block;
-                font-family: 'Bona Nova', serif;
+                font-family: v.$fuenteCursiva;
                 font-size: 2.5rem;
-                color: v.$secundario;
+                color: v.$primario;
                 margin: 2rem 0 0 0;
                 text-align: right;
             }
