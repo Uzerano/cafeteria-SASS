@@ -770,6 +770,8 @@ h1 {
 .contenido-nosotros .imagen-nosotros img {
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
+  border: 3rem solid #fff;
+  box-shadow: 10px 8px 10px 10px rgba(105, 104, 104, 0.3490196078);
 }
 .contenido-nosotros .texto {
   line-height: 2;

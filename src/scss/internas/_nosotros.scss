@@ -15,9 +15,10 @@
         }
         img {
             transform: rotate(-6deg);
-
-        }
+            border: 3rem solid #fff;
+            box-shadow: 10px 8px 10px 10px #69686859;
     }
+}
 
     .texto {
         line-height: 2;
