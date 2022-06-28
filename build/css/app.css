@@ -771,7 +771,7 @@ h1 {
   -webkit-transform: rotate(-6deg);
           transform: rotate(-6deg);
   border: 3rem solid #fff;
-  box-shadow: 10px 8px 10px 10px rgba(105, 104, 104, 0.3490196078);
+  box-shadow: 10px 8px 10px 10px rgba(105, 105, 105, 0.349);
 }
 .contenido-nosotros .texto {
   line-height: 2;
