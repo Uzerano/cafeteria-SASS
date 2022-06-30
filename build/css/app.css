@@ -327,6 +327,7 @@ body {
 
 p {
   color: #000;
+  line-height: 2;
 }
 
 .contenedor {
@@ -351,10 +352,6 @@ ul {
 }
 ul li {
   list-style: none;
-}
-
-.text-center {
-  text-align: center;
 }
 
 h1,
@@ -462,6 +459,22 @@ h1 {
   background-image: url(../img/header_nosotros.jpg);
 }
 
+.header-proceso {
+  background-image: url(../img/header_proceso.jpg);
+}
+
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
+}
+
+.header-galeria {
+  background-image: url(../img/header_galeria.jpg);
+}
+
+.header-contacto {
+  background-image: url(../img/header_contacto.jpg);
+}
+
 .nav-principal {
   display: flex;
   flex-direction: column;
@@ -480,7 +493,6 @@ h1 {
   display: block;
   text-transform: uppercase;
   color: #fff;
-  font-size: 2rem;
   font-weight: 700;
 }
 .nav-principal .link:hover {
@@ -512,20 +524,16 @@ h1 {
   }
 }
 
-.sobre-nosotros {
+.contenido-principal {
   padding: 4rem 2.5rem;
   background-color: #fff;
 }
 @media (min-width: 768px) {
-  .sobre-nosotros {
+  .contenido-principal {
     margin-top: -10rem;
     padding: 10rem;
     position: relative;
   }
-}
-
-.parrafo-nosotros {
-  line-height: 2;
 }
 
 .contenido-experiencia-grid {
@@ -781,4 +789,75 @@ h1 {
   padding: 1rem;
   border-left: 0.5rem solid #5e311e;
   font-size: 2rem;
+}
+
+.proceso-cafe {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .proceso-cafe {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+}
+.proceso-cafe:last-of-type {
+  margin-bottom: 0;
+}
+.proceso-cafe:nth-child(even) .texto {
+  order: -1;
+}
+.proceso-cafe .imagen,
+.proceso-cafe .texto {
+  flex: 1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
+.proceso-cafe .texto h3 {
+  color: #5e311e;
+  margin: 0;
+  text-align: left;
+}
+.proceso-cafe .texto h3::after {
+  content: "";
+  background-color: #c39c63;
+  display: block;
+  width: 50%;
+  height: 0.5rem;
+}
+
+.contenido-menu {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  aspect-ratio: 3/5;
+}
+@media (min-width: 480px) {
+  .contenido-menu {
+    aspect-ratio: 3/4;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    background-position: bottom right;
+    background-size: 50%;
+    aspect-ratio: 16/7;
+    align-items: center;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
 }

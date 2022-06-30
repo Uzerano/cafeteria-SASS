@@ -1,7 +1,7 @@
 @use "base/variables" as v;
 @use "base/mixins" as m;
 
-.sobre-nosotros {
+.contenido-principal {
   padding: 4rem calc(v.$separacion / 2);
   background-color: v.$blanco;
 
@@ -12,7 +12,6 @@
   }
 }
 
-.parrafo-nosotros {
-  line-height: 2;
-}
+
+
 
